@@ -18,10 +18,7 @@ let isPalindrome = (str) => {
 	let isPalindrome = false;
 	let strArr = str.split("");
 	while(startIndex >=0 && endIndex<=length-1){
-		if(startIndex ==0 && endIndex == length-1){
-			return true
-		}
-		if(strArr[startIndex].toLowerCase() == strArr[endIndex].toLowerCase()){
+		if(strArr[startIndex] === strArr[endIndex]){
 			startIndex--;
 			endIndex++;
 		}else{
@@ -29,13 +26,17 @@ let isPalindrome = (str) => {
 		}
 	}
 
+	if(startIndex === -10 && endIndex === length){
+			isPalindrome = true
+		}
+
 	return isPalindrome;
 };
 
 
-console.log(isPalindrome("Fish hsif"));
+//console.log("Fish hsifis " + isPalindrome("Fish hsif"));
 
-console.log(isPalindrome("abccba"));;
+console.log(isPalindrome("aba"));;
 
 console.log(isPalindrome("abcba"));;
 

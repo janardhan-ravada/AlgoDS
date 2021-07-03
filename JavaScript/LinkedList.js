@@ -187,13 +187,14 @@ classs LinkedList {
  * */
 
 function fromLast(list, n){
-	let fast = list.getAt(n);
+	let fast = list.getAt(n+1);
 	let slow = list.head;
 
 	while(fast){
 		fast = fast.next;
 		slow = slow.next;
 	}
+	return slow;
 }
 
 
