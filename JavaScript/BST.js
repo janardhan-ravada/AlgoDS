@@ -93,3 +93,28 @@ function validate(node, min=null, max = null){
 
 	return true;
 }
+
+
+function inorderTraversal(node){
+	if(!node)
+		return;
+	inorderTraversal(node.left);
+	console.log(node.data);
+	inorderTraversal(node.right);
+}
+let root = new Node("50");
+
+root.insert("40");
+root.insert("30");
+root.insert("55");
+root.insert("60");
+root.insert("55");
+root.insert("35");
+root.insert("57");
+root.insert("65");
+root.insert("64");
+root.insert("66");
+
+
+console.log(inorderTraversal(root));
+
