@@ -39,4 +39,4 @@ function memoize(fn){
 	}
 }
 
-console.log(memoize(fib(10)));
+console.log(memoize(fib(10)));s

@@ -15,7 +15,7 @@ let isPalindrome = (str) => {
 		endIndex = Math.floor(length/2);
 	}
 
-	let isPalindrome = false;
+	let isPalindrome = false; 		 
 	let strArr = str.split("");
 	while(startIndex >=0 && endIndex<=length-1){
 		if(strArr[startIndex] === strArr[endIndex]){
@@ -26,7 +26,7 @@ let isPalindrome = (str) => {
 		}
 	}
 
-	if(startIndex === -10 && endIndex === length){
+	if(startIndex === -1 && endIndex === length){
 			isPalindrome = true
 		}
 

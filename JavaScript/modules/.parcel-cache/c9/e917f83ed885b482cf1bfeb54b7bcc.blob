@@ -1,0 +1,23 @@
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+_parcelHelpers.defineInteropFlag(exports);
+_parcelHelpers.export(exports, "addToCart", function () {
+  return addToCart;
+});
+_parcelHelpers.export(exports, "printCart", function () {
+  return printCart;
+});
+const shippingCart = 10;
+const cart = [];
+const addToCart = (product, quantity) => {
+  console.log(`Adding product ${product} to cart`);
+  cart.push({
+    product: quantity
+  });
+};
+const printCart = () => {
+  console.log("Printing cart");
+  cart.forEach(item => console.log(item.product));
+};
+exports.default = () => {
+  return cart.length;
+};

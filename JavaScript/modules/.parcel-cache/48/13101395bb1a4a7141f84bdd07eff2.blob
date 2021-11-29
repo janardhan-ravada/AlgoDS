@@ -1,0 +1,8 @@
+var _shoppingCartJs = require('./shoppingCart.js');
+var _parcelHelpers = require("@parcel/transformer-js/lib/esmodule-helpers.js");
+var _shoppingCartJsDefault = _parcelHelpers.interopDefault(_shoppingCartJs);
+var _shoppingCartJsDefault = _parcelHelpers.interopDefault(_shoppingCartJs);
+_shoppingCartJs.addToCart('apples', 4);
+_shoppingCartJs.addToCart('Banana', 5);
+_shoppingCartJs.printCart();
+console.log("cart length: " + _shoppingCartJsDefault.default());
